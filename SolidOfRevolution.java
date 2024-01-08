@@ -1,13 +1,12 @@
-public class SolidOfRevolution extends Shape{
-    private double raduis;
+public abstract class SolidOfRevolution extends Shape{
+    private double radius;
 
-    public SolidOfRevolution(double volume, double raduis){
-        super(volume);
-        this.raduis = raduis;
+    public SolidOfRevolution(double radius){
+        this.radius = radius;
 
     }
 
-    public double getRaduis() {
-        return raduis;
+    public double getRadius() {
+        return radius;
     }
 }

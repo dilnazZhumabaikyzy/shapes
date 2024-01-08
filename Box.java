@@ -3,9 +3,10 @@ import java.util.ArrayList;
 public class Box extends Shape{
     private ArrayList<Shape> shapes = new ArrayList<>();
     private double availableVolume;
+    private double volume;
 
     public Box(double volume) {
-        super(volume);
+        this.volume = volume;
         this.availableVolume = volume;
     }
     private boolean add(Shape shape){
@@ -18,5 +19,8 @@ public class Box extends Shape{
         return false;
     }
 
-    b
+    @Override
+    public double getVolume() {
+        return volume;
+    }
 }
